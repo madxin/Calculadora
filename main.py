@@ -55,6 +55,15 @@ if __name__ == "__main__":
 
             print(f'\nResultado: {resultado}')
 
+            opcao = input(
+                'Escolha a funcao (1-calculadora / 2-calculadora_v2): '
+            )
+
+            if opcao == '2':
+                resultado = calculadora_v2(num1, num2, operador)
+            else:
+                resultado = calculadora(num1, num2, operador)
+
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
