@@ -64,6 +64,13 @@ if __name__ == "__main__":
             else:
                 resultado = calculadora(num1, num2, operador)
 
+            continuar = input(
+                '\nDeseja efetuar outra operacao? (s/n): '
+            ).lower()
+
+            if continuar != 's':
+                break    
+
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
