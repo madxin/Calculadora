@@ -51,10 +51,6 @@ if __name__ == "__main__":
             num2 = float(input('Segundo número: '))
             operador = input('Operador (+, -, *, /, **, %): ')
 
-            resultado = calculadora(num1, num2, operador)
-
-            print(f'\nResultado: {resultado}')
-
             opcao = input(
                 'Escolha a funcao (1-calculadora / 2-calculadora_v2): '
             )
@@ -64,6 +60,11 @@ if __name__ == "__main__":
             else:
                 resultado = calculadora(num1, num2, operador)
 
+            resultado = calculadora(num1, num2, operador)
+
+            print(f'\nResultado: {resultado}')
+
+            
             continuar = input(
                 '\nDeseja efetuar outra operacao? (s/n): '
             ).lower()
