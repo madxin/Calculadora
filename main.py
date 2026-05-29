@@ -36,6 +36,10 @@ if __name__ == "__main__":
             num2 = float(input('Segundo número: '))
             operador = input('Operador (+, -, *, /, **, %): ')
 
+            resultado = calculadora(num1, num2, operador)
+
+            print(f'\nResultado: {resultado}')
+
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
