@@ -22,6 +22,10 @@ if __name__ == "__main__":
             print('Calculadora')
             print('----------------------------------\n')
 
+            num1 = float(input('Primeiro número: '))
+            num2 = float(input('Segundo número: '))
+            operador = input('Operador (+, -, *, /, **, %): ')
+
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
